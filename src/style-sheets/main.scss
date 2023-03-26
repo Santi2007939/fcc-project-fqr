@@ -1,0 +1,125 @@
+@use './mixin/centrar' as *;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500&display=swap');
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.quote__box {
+    width: 60%;
+    max-width: 450px;
+    padding: 40px 50px;
+    @include centrar;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+
+    &__text {
+        &__quote {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 28px;
+            font-weight: 500;
+        }
+
+        &__author {
+            text-align: right;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            opacity: 1;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -15px;
+        align-items: center;
+        
+        &__link {
+            font-size: 15px;
+            border-radius: 5px;
+
+            .icon {
+                border-radius: 5px;
+                color: white;
+                padding: 8px;
+                margin-top: 2px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &__new {
+            border: none;
+            padding: 8px;
+            border-radius: 2px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:active {
+                transition: 1s;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .quote__box {
+        width: 30%;
+    
+        &__text {
+            &__quote {
+                font-size: 18px;
+            }
+        }
+
+        &__button {
+            &__link {
+                .icon {
+                    padding: 8px;
+                    font-size: 15px;
+                }
+            }
+    
+            &__new {
+                border-radius: 4px;
+                font-size: 13px;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .quote__box {
+        padding: 20px 20px;
+        &__text {
+            &__quote {
+                font-size: 13px;
+            }
+
+            &__author {
+                font-size: 11px;
+            }
+        }
+
+        &__button {
+            &__link {
+                .icon {
+                    padding: 8px;
+                    font-size: 11px;
+                }
+            }
+    
+            &__new {
+                font-size: 11px;
+            }
+        }
+    }
+}

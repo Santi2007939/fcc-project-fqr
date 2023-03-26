@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500&display=swap");
+.wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.quote__box {
+  width: 60%;
+  max-width: 450px;
+  padding: 40px 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+}
+.quote__box__text__quote {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 500;
+}
+.quote__box__text__author {
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 1;
+}
+.quote__box__button {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -15px;
+  align-items: center;
+}
+.quote__box__button__link {
+  font-size: 15px;
+  border-radius: 5px;
+}
+.quote__box__button__link .icon {
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  margin-top: 2px;
+}
+.quote__box__button__link .icon:hover {
+  cursor: pointer;
+}
+.quote__box__button__new {
+  border: none;
+  padding: 8px;
+  border-radius: 2px;
+}
+.quote__box__button__new:hover {
+  cursor: pointer;
+}
+.quote__box__button__new:active {
+  transition: 1s;
+}
+
+@media screen and (max-width: 400px) {
+  .quote__box {
+    width: 30%;
+  }
+  .quote__box__text__quote {
+    font-size: 18px;
+  }
+  .quote__box__button__link .icon {
+    padding: 8px;
+    font-size: 15px;
+  }
+  .quote__box__button__new {
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .quote__box {
+    padding: 20px 20px;
+  }
+  .quote__box__text__quote {
+    font-size: 13px;
+  }
+  .quote__box__text__author {
+    font-size: 11px;
+  }
+  .quote__box__button__link .icon {
+    padding: 8px;
+    font-size: 11px;
+  }
+  .quote__box__button__new {
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=main.css.map */
